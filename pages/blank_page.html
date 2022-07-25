@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdminCW | Blank Page</title>
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="">
+    <nav
+      class="navbar layout-navbar navbar-expand-lg bg-white shadow-sm fixed-top"
+    >
+      <div class="container-fluid position-relative">
+        <button
+          class="btn btn-toggle-menu shadow-sm me-lg-3 order-lg-1 order-3"
+          aria-label="Menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand fw-bold order-1" href="#"
+          >Admin<span class="text-primary">CW</span></a
+        >
+        <ul
+          class="navbar-nav ms-auto me-3 me-lg-0 mb-lg-0 d-flex flex-row align-items-center order-lg-3 order-2"
+        >
+          <li class="nav-item">
+            <button
+              id="btnFullscreen"
+              class="btn me-2 shadow-sm"
+              title="FullScreen"
+            >
+              <i class="bi bi-arrows-fullscreen"></i>
+            </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="avatar img-fluid rounded-circle me-1"
+                alt=""
+              />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-lg-end border-0 shadow">
+              <li>
+                <span class="px-2 py-1 d-flex align-items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    class="avatar img-fluid rounded-circle me-2 flex-shrink-0"
+                    alt=""
+                  />
+                  <div class="small text-truncate">
+                    <h6 class="mb-0">John Doe</h6>
+                    <span class="text-muted">admincw@gmail.com</span>
+                  </div>
+                </span>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="/pages/account.html"
+                  ><i class="bi bi-gear me-2"></i> Account</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="/pages/login.html"
+                  ><i class="bi bi-box-arrow-right me-2"></i> Logout</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div>
+      <!-- sidebar -->
+      <div class="layout-sidenav">
+        <div class="sidenav-content shadow-sm">
+          <!-- <div class="sidenav-user ps-3">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="flex-shrink-1">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                  class="avatar img-fluid rounded me-1"
+                  alt=""
+                />
+              </div>
+              <div class="flex-grow-1 ps-2">
+                <h4 class="h6 mb-0">John Doe</h4>
+              </div>
+            </div>
+          </div>
+          <hr /> -->
+          <div class="sidenav-menu">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="../"
+                  ><div class="sidenav-icon me-2">
+                    <i class="bi bi-speedometer"></i>
+                  </div>
+                  DashBoard</a
+                >
+              </li>
+              <li class="nav-header">EXAMPLES</li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTables"
+                  aria-expanded="true"
+                  aria-controls="collapseTables"
+                >
+                  <div class="sidenav-icon me-2">
+                    <i class="bi bi-table"></i>
+                  </div>
+                  Tables
+                  <div class="sidenav-collapse-arrow">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                </a>
+
+                <div
+                  id="collapseTables"
+                  class="collapse"
+                  aria-labelledby="headingTables"
+                  data-bs-parent="#accordionExample"
+                >
+                  <a href="/pages/basic_table.html" class="nav-link"
+                    ><div class="sidenav-icon ms-1 me-2 d-inline">
+                      <i class="bi bi-circle"></i>
+                    </div>
+                    Basic Table</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link active"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExtras"
+                  aria-expanded="true"
+                  aria-controls="collapseExtras"
+                >
+                  <div class="sidenav-icon me-2">
+                    <i class="bi bi-plus-square"></i>
+                  </div>
+                  Extras
+                  <div class="sidenav-collapse-arrow">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                </a>
+
+                <div
+                  id="collapseExtras"
+                  class="collapse show"
+                  aria-labelledby="headingExtras"
+                  data-bs-parent="#accordionExample"
+                >
+                  <a href="/pages/account.html" class="nav-link"
+                    ><div class="sidenav-icon ms-1 me-2 d-inline">
+                      <i class="bi bi-circle"></i>
+                    </div>
+                    Account</a
+                  >
+                  <a href="/pages/login.html" class="nav-link"
+                    ><div class="sidenav-icon ms-1 me-2 d-inline">
+                      <i class="bi bi-circle"></i>
+                    </div>
+                    Login</a
+                  >
+                  <a href="/pages/blank_page.html" class="nav-link active"
+                    ><div class="sidenav-icon ms-1 me-2 d-inline">
+                      <i class="bi bi-circle"></i>
+                    </div>
+                    Blank Page</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="layout-content">
+        <div class="container-fluid px-lg-5">
+          <div class="main-content">
+            <div class="d-flex align-items-center justify-content-between pt-4">
+              <h1>Blank Page</h1>
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../">DashBoard</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Blank Page
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row row-cols-1">
+              <div class="col">
+                <div class="card border-0 shadow-sm">
+                  <div class="card-body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-muted small my-5">Copyright © AdminCW 2022</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
