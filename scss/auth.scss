@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+@import "variables";
+
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 html,
 body {
@@ -10,7 +17,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: $light;
     color: $gray-900;
     font-family: "Montserrat", sans-serif;
 }
@@ -22,7 +28,6 @@ body {
 @include media-breakpoint-up(sm) {
     .login-wrapper {
         padding-top: 140px;
-
         .card {
             max-width: 500px;
         }
