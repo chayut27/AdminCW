@@ -143,25 +143,10 @@
       <!-- sidebar -->
       <div class="layout-sidenav mt-3 bg-body-tertiary">
         <div class="sidenav-content shadow-sm">
-          <!-- <div class="sidenav-user ps-3">
-            <div class="d-flex align-items-center justify-content-center">
-              <div class="flex-shrink-1">
-                <img
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  class="avatar img-fluid rounded me-1"
-                  alt=""
-                />
-              </div>
-              <div class="flex-grow-1 ps-2">
-                <h4 class="h6 mb-0">John Doe</h4>
-              </div>
-            </div>
-          </div>
-          <hr /> -->
           <div class="sidenav-menu" id="accordionExample">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="./"
+                <a class="nav-link" href="/index.html"
                   ><div class="sidenav-icon me-2">
                     <i class="bi bi-speedometer"></i>
                   </div>
@@ -170,7 +155,7 @@
               </li>
               <li class="nav-header">EXAMPLES</li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/user.html"
+                <a class="nav-link active" href="/pages/user.html"
                   ><div class="sidenav-icon me-2">
                     <i class="bi bi-speedometer"></i>
                   </div>
@@ -201,12 +186,10 @@
                   aria-labelledby="headingExtras"
                   data-bs-parent="#accordionExample"
                 >
-                  <a href="./pages/account.html" class="nav-link">
-                    Account</a
-                  >
+                  <a href="/pages/account.html" class="nav-link"> Account</a>
                   <a href="/pages/login.html" class="nav-link"> Login</a>
                   <a href="/pages/register.html" class="nav-link"> Register</a>
-                  <a href="./pages/blank_page.html" class="nav-link">
+                  <a href="/pages/blank_page.html" class="nav-link">
                     Blank Page</a
                   >
                 </div>
@@ -219,201 +202,189 @@
       <!-- content -->
       <div class="layout-content d-flex flex-column align-items-stretch">
         <div class="main-content container-fluid px-lg-5 flex-grow-1 pb-4">
-          <div class="d-flex align-items-center justify-content-between pt-4">
-            <!-- <h1>DashBoard</h1> -->
-            <!-- <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Library
-                  </li>
-                </ol>
-              </nav> -->
+          <nav
+            style="--bs-breadcrumb-divider: '>'"
+            class="pt-4"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../">DashBoard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                User List
+              </li>
+            </ol>
+          </nav>
+          <div class="row align-items-center justify-content-lg-between mb-4">
+            <div class="col-12 col-lg-auto">
+              <h1 class="h2 mb-0">User List</h1>
+            </div>
+            <div class="col-12 col-lg-auto">
+              <a href="#" class="btn btn-primary"
+                ><i class="bi bi-plus"></i> Add User</a
+              >
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">PDF</button>
+                <button type="button" class="btn btn-secondary">EXCEL</button>
+              </div>
+            </div>
           </div>
-
-          <div class="row gy-4 gy-lg-0 row-cols-1 row-cols-lg-4 mb-4">
-            <div class="col">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title">Income</h5>
-                    </div>
-                    <div class="col-auto">
-                      <div class="text-primary icon-circle">
-                        <i class="bi bi-currency-dollar"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <h1 class="h3 mt-1 mb-3 fw-bold">$9,999</h1>
-                  <div class="text-muted">
-                    <span class="badge bg-success text-success bg-opacity-10"
-                      >3.65%</span
-                    >
-                    Since last week
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title">Order</h5>
-                    </div>
-                    <div class="col-auto">
-                      <div class="text-primary icon-circle">
-                        <i class="bi bi-handbag"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <h1 class="h3 mt-1 mb-3 fw-bold">9,999</h1>
-                  <div class="text-muted">
-                    <span class="badge bg-danger text-danger bg-opacity-10"
-                      >3.65%</span
-                    >
-                    Since last week
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title">Activity</h5>
-                    </div>
-                    <div class="col-auto">
-                      <div class="text-primary icon-circle">
-                        <i class="bi bi-activity"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <h1 class="h3 mt-1 mb-3 fw-bold">9,999</h1>
-                  <div class="text-muted">
-                    <span class="badge bg-success text-success bg-opacity-10"
-                      >3.65%</span
-                    >
-                    Since last week
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title">Revenue</h5>
-                    </div>
-                    <div class="col-auto">
-                      <div class="text-primary icon-circle">
-                        <i class="bi bi-wallet"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <h1 class="h3 mt-1 mb-3 fw-bold">$9,999</h1>
-                  <div class="text-muted">
-                    <span class="badge bg-success text-success bg-opacity-10"
-                      >3.65%</span
-                    >
-                    Since last week
-                  </div>
-                </div>
-              </div>
+          <div class="row justify-content-end mb-4">
+            <div class="col-12 col-lg-3">
+              <input type="text" class="form-control" placeholder="Search" />
             </div>
           </div>
 
           <div class="row">
             <div class="col-12">
               <div class="card border-0 shadow-sm">
-                <div class="card-header">
-                  <h2 class="mb-1 h5">Latest Orders</h2>
-                </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table class="table">
+                    <table class="table table-striped table-hover">
                       <thead class="">
                         <tr>
-                          <th>Order ID</th>
+                          <th>User ID</th>
                           <th>Picture</th>
                           <th>Name</th>
                           <th>Status</th>
-                          <th class="text-end">Orders</th>
+                          <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><a href="#">OR9842</a></td>
+                          <td><a href="#">UUI9978</a></td>
                           <td>
                             <img
-                              src="https://images.unsplash.com/photo-1526925712774-2833a7ecd0d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80"
+                              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                               class="img-fluid"
-                              style="width: 100px; height: 80px"
+                              style="width: 80px; height: 60px"
                               alt=""
                             />
                           </td>
-                          <td>Macbook Air M2 (512)</td>
+                          <td>John Doe</td>
                           <td class="">
-                            <span class="badge bg-success">Shipped</span>
+                            <span class="badge bg-success">Online</span>
                           </td>
-                          <td class="text-end">520</td>
+                          <td class="text-end">
+                            <button class="btn btn-warning">
+                              <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="btn btn-danger">
+                              <i class="bi bi-trash-fill"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
-                          <td><a href="#">OR1429</a></td>
+                          <td><a href="#">UUI9977</a></td>
                           <td>
                             <img
-                              src="https://images.unsplash.com/photo-1526925712774-2833a7ecd0d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80"
+                              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                               class="img-fluid"
-                              style="width: 100px; height: 80px"
+                              style="width: 80px; height: 60px"
                               alt=""
                             />
                           </td>
-                          <td>Macbook Pro M2 (512)</td>
+                          <td>Adam Doe</td>
                           <td class="">
-                            <span class="badge bg-warning">Pending</span>
+                            <span class="badge bg-success">Online</span>
                           </td>
-                          <td class="text-end">1024</td>
+                          <td class="text-end">
+                            <button class="btn btn-warning">
+                              <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="btn btn-danger">
+                              <i class="bi bi-trash-fill"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
-                          <td><a href="#">OR1429</a></td>
+                          <td><a href="#">UUI9976</a></td>
                           <td>
                             <img
-                              src="https://images.unsplash.com/photo-1526925712774-2833a7ecd0d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80"
+                              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
                               class="img-fluid"
-                              style="width: 100px; height: 80px"
+                              style="width: 80px; height: 60px"
                               alt=""
                             />
                           </td>
-                          <td>Iphone 14 Pro Max (128GB)</td>
+                          <td>Miguel Doe</td>
                           <td class="">
-                            <span class="badge bg-info">Processing</span>
+                            <span class="badge bg-secondary">Offline</span>
                           </td>
-                          <td class="text-end">1024</td>
+                          <td class="text-end">
+                            <button class="btn btn-warning">
+                              <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="btn btn-danger">
+                              <i class="bi bi-trash-fill"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
-                          <td><a href="#">OR1429</a></td>
+                          <td><a href="#">UUI9975</a></td>
                           <td>
                             <img
-                              src="https://images.unsplash.com/photo-1526925712774-2833a7ecd0d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80"
+                              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                               class="img-fluid"
-                              style="width: 100px; height: 80px"
+                              style="width: 80px; height: 60px"
                               alt=""
                             />
                           </td>
-                          <td>Iphone 14 Pro Max (32GB)</td>
+                          <td>Rafaella Doe</td>
                           <td class="">
-                            <span class="badge bg-danger">Delivered</span>
+                            <span class="badge bg-secondary">Offline</span>
                           </td>
-                          <td class="text-end">1024</td>
+                          <td class="text-end">
+                            <button class="btn btn-warning">
+                              <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="btn btn-danger">
+                              <i class="bi bi-trash-fill"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">UUI9975</a></td>
+                          <td>
+                            <img
+                              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                              class="img-fluid"
+                              style="width: 80px; height: 60px"
+                              alt=""
+                            />
+                          </td>
+                          <td>Ava Doe</td>
+                          <td class="">
+                            <span class="badge bg-success">Online</span>
+                          </td>
+                          <td class="text-end">
+                            <button class="btn btn-warning">
+                              <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="btn btn-danger">
+                              <i class="bi bi-trash-fill"></i>
+                            </button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end mt-4">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link active" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

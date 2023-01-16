@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,13 @@
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="/assets/css/auth.min.css" />
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -19,18 +25,18 @@
         <div class="row">
           <div class="col-lg-8 px-0 vh-100 d-none d-lg-block">
             <img
-              src="https://images.unsplash.com/photo-1662101161539-fc5ef90fa0d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               class="img-fluid h-100 w-100"
               alt=""
             />
           </div>
           <div class="col-12 col-lg-4">
             <div class="login-wrapper">
-              <h1 class="mb-5 fw-bold text-center">
+              <h1 class="mb-4 fw-bold text-center">
                 Admin<span class="text-primary">CW</span>
               </h1>
 
-              <div class="card border-0 shadow mx-auto">
+              <div class="card border-0 shadow-sm mx-auto">
                 <div class="card-body">
                   <p class="text-center text-muted">Login to continue</p>
                   <form action="">
@@ -73,11 +79,50 @@
                         >Login</a
                       >
                     </div>
+                    <div class="dropdown pb-3 text-end">
+                      <button
+                        class="btn btn-outline-secondary  dropdown-toggle theme-active"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown button
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <button
+                            class="dropdown-item"
+                            type="button"
+                            data-bs-theme-value="dark"
+                          >
+                            <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            class="dropdown-item"
+                            type="button"
+                            data-bs-theme-value="light"
+                          >
+                            <i class="bi bi-sun-fill me-2"></i> Light
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            class="dropdown-item"
+                            type="button"
+                            data-bs-theme-value="auto"
+                          >
+                            <i class="bi bi-circle-half me-2"></i> Auto
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="text-muted small text-center mb-5">
                       <a href="/pages/register.html">Create an account</a>
                     </div>
                     <div class="text-muted small text-center">
-                      Copyright © AdminCW 2022
+                      Copyright © AdminCW 2023
                     </div>
                   </form>
                 </div>
@@ -87,5 +132,6 @@
         </div>
       </div>
     </section>
+    <script src="/assets/js/colorMode.js"></script>
   </body>
 </html>
