@@ -1,5 +1,5 @@
 # AdminCW
-AdminCW free admin dashboard bootstrap 5
+AdminCW free simple admin dashboard bootstrap 5 for developer
 
 
 how to install
